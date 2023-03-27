@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="../assets/css/styles.css">
+
+        <title>Louis Borroni</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Stage de 2ème année</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="../index.html" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i>Revenir à l'accueil
+                            </a>
+                        </li>
+
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== ABOUT ====================-->
+             <section class="about section" id="about">
+                <h2 class="section__title">Mon stage de 2ème année chez Auditextyl</h2>
+                <br>
+                <div class="vue__container container swiper-container">
+                    <div class="swipper-wrapper">
+
+                        <div class="vue__content">            
+                            <div class="vue__data">
+                                <h3 class="vue__title">Présentation du stage</h3>
+                                <p class="vue__description">Dans le cadre de ma 2ème année de BTS SIO, j'ai dû réaliser un second stage en entreprise de 7 semaines axé sur le développement informatique.<br> j'ai donc pris contact avec Franck Lavigne, directeur de l'entreprise Auditextyl.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="vue__content grid">            
+                            <div class="vue__data">
+                                <h3 class="vue__title">L'entreprise</h3>
+                                <p class="vue__description">Auditextyl est une entreprise qui a pour mission d’aider les blanchisseries à utiliser la <strong>méthode RABC</strong>  afin de maîtriser l'hygiène du linge et ainsi minimiser le risque de contamination par celui-ci.
+                                    <br>
+                                    <br><strong>Méthode RABC :</strong> Risk Analysis and Biocontamination Control (Analyse des risques et maîtrise de la biocontamination), qui repose sur les bonnes pratiques professionnelles.
+                                </p>
+                            </div>
+                            <img src="../assets/img/auditextyl.gif" alt="" class="vue__img">
+                        </div>
+
+                        <br class="cdc">
+
+                        <div class="vue__content ">            
+                            <div class="vue__data">
+                                <h3 class="vue__title">Les collaborateurs</h3>
+                                <p class="vue__description">
+                                    <strong>Franck Lavigne :</strong> Créateur et directeur d’Auditextyl, il sera le client de l'application, il est également directeur d'Ecothane son autre entreprise.<br>
+                                    <strong>Philippe Roca :</strong> Développeur full stack qui m'encadrera tout au long du stage, c'est avec lui que je vais développer l'application.     
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="vue__content ">            
+                            <div class="vue__data">
+                                <h3 class="vue__title">Le contexte & définiton du cahier des charges</h3>
+                                <p class="vue__description">
+                                    Mr Lavigne souhaite créer une application qui a pour vocation d'être un assistant pour le responsable de la blanchisserie dans sa mission d'animation des équipes (Management) notamment au sujet de la désinfection mais également dans sa mission de gestion de la production.
+                                    <br>
+                                    <br> L'application apportera donc un plus pour l'entreprise avec son concept innovateur
+                                    <br>
+                                    <br> Cette application a également pour but de diminuer au maximum la création de noradrénaline en cas d'augmentations de production saisonnières, pannes de machines, de casses, d'intégration de nouveaux clients, de choix d'investissements matériels.
+                                    <br>Elle permet d'aider à la maîtrise du risque de contamination bactériologique du linge propre: la politique de cette application est de faciliter la maîtrise du risque de contamination du linge au quotidien.
+                                    <br>
+                                    <br>Cela passe par 4 points:
+                                    <br>
+                                    <br><strong>Traçabilité de la désinfection: </strong>
+                                    <br>- Enregistrement horodaté des actions de désinfection des surfaces.
+                                    <br><strong>Maîtrise du FIFO : délai de 48h maximum entre l’entrée du linge sale et son lavage, séchage :</strong>
+                                    <br>- Connaissance de la clientèle, avec les types de linges traités (Famille textile, Quantité-poids, Fréquence de livraison). 
+                                    <br>- Listing de la clientèle, et enregistrement daté des passages. 
+                                    <br>- Création du planning de livraison. 
+                                    <br>- Enregistrement horodaté des désinfections des camions, avant d’y recharger du propre.
+                                    <br><strong>Aide à l’organisation de la production :</strong>
+                                    <br>- Création du GANTT de production. 
+                                    <br>- Modification suivant les évènements du GANTT de production. 
+                                    <br><strong>Aide à la gestion de la blanchisserie : </strong>
+                                    <br>- Gestion des achats, participant à la surveillance de la désinfection du linge et des mains (Périodicité des achats des bidons lessiviels, des flacons de savons, et de gel bactéricide). Achats des lamelles de Géloses pour les relevés bactériologiques. 
+                                    <br>- Surveillance de l’évolution des coûts de production par famille textile.
+                                    <br>
+                                    <br>Personnellement j’ai à charge de m’occuper du premier point: <strong>La traçabilité de la désinfection.</strong> 
+                                    <br>
+                                    <br>Très important également, cette application doit d’intégrer la notion de handicap. Les utilisateurs doivent pouvoir renseigner les tableaux,(qui vont se servir de base pour la création de graphiques) sans savoir ni lire, ni écrire. D’où un passage par des pictogrammes non infantilisants, mais stylisés ; utilisation des couleurs pour la classification, etc….
+                                </p>
+                            </div>
+                        </div>
+                        <div id="conception"></div>
+
+                        <div class="vue__content ">            
+                            <div class="vue__data">
+                                <h3 class="vue__title">Les Objetifs</h3>
+                                <p class="vue__description">
+                                    <strong>- Objectif technique :</strong> Réaliser la partie traçabilité de l’application de la conception au déploiement,  découvrir de nouveaux outils / langages.<br>
+                                    <strong>- Objectif professionel :</strong> Avoir la capacité de discuter avec le client, trouver des solutions techniques adaptés et réalisables pour son projet.     
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="vue__content ">            
+                                <div class="vue__data">
+                                    <h2 class="section__title">Réflexion sur la conception de L'application</h2>
+                                    <p class="vue__sub">
+                                        Lors des premiers jours de stage, j'ai essentiellement travaillé avec Mr Roca qui m'a présenté les ressources avec lesquelles nous allons travailler.
+                                    </p>
+                                    <br>
+                                    <h3 class="vue__title">Les ressources que j'ai dû installer :</h3>
+                                    <br>
+                                    <div class="vue__content grid ">
+                                        <img src="../assets/img/cmder.jpg" alt="" class="vue__img-icon">
+                                        <div class="vue__data">
+                                            <h3 class="vue__title">Cmder</h3>
+                                            <p class="vue__description">
+                                                C’est un émulateur de terminal portable, il intègre également git.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    
+                                    <div class="vue__content grid ">
+                                        <img src="../assets/img/node.jpg" alt="" class="vue__img-icon">
+                                        <div class="vue__data">
+                                            <h3 class="vue__title">Node.js</h3>
+                                            <p class="vue__description">
+                                                C’est une plateforme logicielle libre en JavaScript, orientée vers les applications réseau événementielles hautement concurrentes qui doivent pouvoir monter en charge.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="vue__content grid ">
+                                        <img src="../assets/img/expo.png" alt="" class="vue__img-icon">
+                                        <div class="vue__data">
+                                            <h3 class="vue__title">Expo-Cli</h3>
+                                            <p class="vue__description">
+                                                C’est un outil de développement d’applications react-native, en plus de fournir de nombreux templates pour démarrer facilement le développement de son application, Expo-cli offre la possibilité de bundler son application directement sur son téléphone afin d’avoir un aperçu en direct.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="vue__content grid ">
+                                        <img src="../assets/img/react-native.png" alt="" class="vue__img-icon">
+                                        <div class="vue__data">
+                                            <h3 class="vue__title">React-Native</h3>
+                                            <p class="vue__description">
+                                                C’est un framework d'applications mobiles open source créé par Facebook. Il est utilisé pour développer des applications pour Android, iOS et UWP en permettant aux développeurs d’utiliser React avec les fonctionnalités natives de ces plateformes.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="vue__content grid ">
+                                        <img src="../assets/img/express.png" alt="" class="vue__img-icon">
+                                        <div class="vue__data">
+                                            <h3 class="vue__title">Express.js</h3>
+                                            <p class="vue__description">
+                                                C’est un framework pour construire des applications web basées sur Node.js. C'est de fait le framework standard pour le développement de serveur en Node.js.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="vue__content grid ">
+                                        <img src="../assets/img/postman.svg" alt="" class="vue__img-icon">
+                                        <div class="vue__data">
+                                            <h3 class="vue__title">Postman</h3>
+                                            <p class="vue__description">
+                                                C’est une application permettant de tester des API.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="vue__content grid ">
+                                        <img src="../assets/img/yarn.png" alt="" class="vue__img-icon">
+                                        <div class="vue__data">
+                                            <h3 class="vue__title">Yarn</h3>
+                                            <p class="vue__description">
+                                                C’ est un système de packaging logiciel développé en 2016 par Facebook pour l'environnement d'exécution JavaScript Node.js.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <h3 class="vue__title">Les ressources que j'avais déjà :</h3>
+                                    
+                                    <div class="vue__content grid ">
+                                        <img src="../assets/img/visual.jpg" alt="" class="vue__img-icon">
+                                        <div class="vue__data">
+                                            <h3 class="vue__title">Visual studio code</h3>
+                                            <p class="vue__description">
+                                                C’est un éditeur de code extensible développé par Microsoft pour Windows, Linux et macOS.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="vue__content grid ">
+                                        <img src="../assets/img/xampp.png" alt="" class="vue__img-icon">
+                                        <div class="vue__data">
+                                            <h3 class="vue__title">Xampp</h3>
+                                            <p class="vue__description">
+                                                C’est un ensemble de logiciels permettant de mettre en place un serveur Web local, un serveur FTP et un serveur de messagerie électronique.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <h3 class="vue__title">Langages utilisés :</h3>
+                                    <br>
+                                    <div class="vue__content grid ">
+                                        <img src="../assets/img/js.png" alt="" class="vue__img-icon">
+                                        <div class="vue__data">
+                                            <h3 class="vue__title">JavaScript</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="vue__content grid ">
+                                        <img src="../assets/img/sql.jpg" alt="" class="vue__img-icon">
+                                        <div class="vue__data">
+                                            <h3 class="vue__title">SQL</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="vue__content grid ">
+                                        <img src="../assets/img/json.png" alt="" class="vue__img-icon">
+                                        <div class="vue__data">
+                                            <h3 class="vue__title">Json</h3>
+                                        </div>
+                                    </div>
+
+                                    <h3 class="vue__title">Ressources web :</h3>
+                                    <br>
+
+                                    <div class="vue__content grid ">
+                                        <img src="../assets/img/figlogo.png" alt="" class="vue__img-icon">
+                                        <div class="vue__data">
+                                            <h3 class="vue__title">Figma</h3>
+                                            <p class="vue__description">
+                                               Figma est un éditeur de graphiques vectoriels et un outil de prototypage.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="vue__content grid ">
+                                        <img src="../assets/img/trello.jpg" alt="" class="vue__img-icon">
+                                        <div class="vue__data">
+                                            <h3 class="vue__title">Trello</h3>
+                                            <p class="vue__description">
+                                                C’est un outil de gestion de projet en ligne.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <h3 class="vue__title">Cours mis à disposition :</h3>
+                                    <br>
+
+                                    <a href="https://openclassrooms.com/fr/courses/7008001-debutez-avec-react" target="blank">OpenClassrooms, Débutez avec React</a>
+                                    <br>
+                                    <a href="https://openclassrooms.com/fr/courses/6175841-apprenez-a-programmer-avec-javascript" target="blank">OpenClassrooms, Apprenez à programmer avec JavaScript</a>
+                                    <br>
+                                    <a href="https://designcode.io/react" target="blank">DesignCode, React for designers</a>
+                                    <br>
+                                    <a href="https://designcode.io/react-native-for-designers" target="blank">DesignCode, React native for designers</a>
+                                    <br>
+                                    <a href="https://expressjs.com/fr/" target="blank">Documentation Express.js</a>
+                                    <br>
+                                    <a href="https://reactnative.dev/" target="blank">Documentation React Native</a>
+                                    <br>
+                                    <a href="https://www.reactnative.express/" target="blank">React Native Express</a>
+                                </div>
+                            </div>
+                        <div class="vue__content ">            
+                            <div class="vue__data">
+                                <p class="vue__description">
+                                        Mr Roca a établi une architecture provisoire afin que je puisse me retrouver assez facilement dans l’application:
+                                </p>
+                                <br>
+                                <img src="../assets/img/architecture-provisoire-auditextyl.png" alt="" class="archi-img">
+                            </div>
+                        </div>
+
+                        <h2 class="section__title">Formations</h2>
+                        <p class="vue__sub">
+                            Mr Roca souhaitait que j'acquiers une base de connaissances avant que je commence à travailler.
+                            <br>Il m'a alors proposé de suivre les formations listées précédemment, durant les premières semaines de stage j'ai appris énormément de choses en très peu de temps.
+                        </p>
+                        <br>
+                        <br>
+
+                        <h2 class="section__title">Conception du desing et des fonctionnalités de l'application</h2>
+                        <p class="vue__sub">
+                           Durant les semaines suivantes Mr Roca m'a demendé de réfléchir au design de l'application.
+                        </p>
+                        <br>
+                        <br>
+
+                        <div class="vue__content grid ">
+                            <img src="../assets/img/Premier Formulaire.jpg" alt="" class="vue__img">
+                            <div class="vue__data">
+                                <h3 class="vue__title">Premier formulaire de traçabilité</h3>
+                                <p class="vue__description">j'ai donc crée un formulaire en une page avec l'utilisateur sélectionné, la sélection du jour, la surface et la signature avec un bouton afin d'avoir à la fin un enregistrement de traçabilité.
+                                <br> C'était un formulaire d'exemple, juste pour voir ce que pouvait proposer en 1 heure ou 2 de travail
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="figma"></div>
+
+                        <div class="vue__content ">            
+                            <div class="vue__data">
+                                <p class="vue__description">
+                                    J'ai donc montré mon travail à Mr Roca, à suite de cette réunion, nous sommes convenus de créer un formulaire "Wizard", c'est-à-dire que le formulaire serait divisé en plusieurs pages afin de gagner en ergonomie.
+                                    <br>
+                                    <br>
+                                    J'ai également fait une réunion avec Franck Lavigne afin de comprendre ses attentes et adapter le formulaire aux fonctionnalités voulues.
+                                    <br>
+                                    <br>
+                                    Le formulaire consistera à créer un enregistrement à chaque fois qu'une ou plusieurs surface de la blanchisserie sera désinfecté afin d'avoir une traçabilté au niveau de la désinfection de la blanchisserie.
+                                    <br>
+                                    <br>
+                                    Après plusieurs autres réunions et ajustements sur les fonctionnalités et le design du formulaire, nous en sommes arrivés à un modèle figma complet avec une idée des fonctionnalités. 
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="vue__content">
+                                <div class="vue__data">
+                                    <h3 class="vue__title">Réalisation d'un modèle de design pour l'application sur Figma</h3>
+                                </div>
+                            </div>
+
+                        <div class="vue__content grid ">
+                            <img src="../assets/img/Menu-admin.PNG" alt="" class="vue__img">
+                            <div class="vue__data">
+                                <h3 class="vue__title">Menu administrateur Traçabilité</h3>
+                                <p class="vue__description">
+                                    Une fois connecté, le responsable de la blanchisserie qui est également l'admnistrateur de l'application pourra se rendre dans l'onglet "Menu administrateur Traçabilité" c'est actuellement où nous nous trouvons.
+                                    <br> 
+                                    <br> L'administrateur a accès au menu des enregistrements de désinfection.
+                                    <br>
+                                    <br> Nous avons également voulu  mettre en haut à gauche de la page, la photo, le prénom et le nom de l'administrateur utilisant le service 
+                                    <br>
+                                    <br> Une fois que l'utilisateur clique sur le bouton bleu une nouvelle page s'ouvre :
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="vue__content grid ">
+                            <img src="../assets/img/Menu-enregistrement.PNG" alt="" class="vue__img">
+                            <div class="vue__data">
+                                <h3 class="vue__title">Menu des enregistrements de désinfection.</h3>
+                                <p class="vue__description">
+                                    Une fois arrivé sur la page l'utilisateur a la liste des enregistrements de désinfection déjà effectués, il peut alors les modifier ou les supprimer.
+                                    <br>
+                                    <br>
+                                    Dans le cas ou un employé souhaite faire une désinfection, l'administrateur peut ajouter un nouvel enregistrement de désinfection. Dans ce cas il devra affilier l'employé au nouvel enregistrement et ça se passe dans la page suivante.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="vue__content grid ">
+                            <img src="../assets/img/Selection-utilisateur.PNG" alt="" class="vue__img">
+                            <div class="vue__data">
+                                <h3 class="vue__title">Sélection de l'utilisateur / Employé</h3>
+                                <p class="vue__description">
+                                    L'administrateur devra sélectionner l'employé qui va effectuer une désinfection dans la blanchisserie, comme ça dans l'enregistrement nous savons qui a effectué la désinfection.
+                                    <br>
+                                    <br>
+                                    Dans le cas ou l'employé n'existe pas il faudra le créer et l'administrateur peut le faire en ajoutant un nouvel utilisateur.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="vue__content grid ">
+                            <img src="../assets/img/selection-complete.PNG" alt="" class="vue__img">
+                            <div class="vue__data">
+                                <h3 class="vue__title">Création de l'utilisateur</h3>
+                                <p class="vue__description">
+                                    L'administrateur et l'utilisateur devront renseigner les champs obligatoires pour la création du nouvel utilisateur : Nom, Prénom, Signature et Animal. La photo n'est pas obligatoire.
+                                    <br>
+                                    <br>
+                                    L'animal secret fera office de système d'authentification pour l'utilisateur car certains utilisateurs en situation de handicap ne peuvent renseigner un mot de passe conventionnel.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="vue__content grid ">
+                            <img src="../assets/img/Menu-utilisateur.PNG" alt="" class="vue__img">
+                            <div class="vue__data">
+                                <h3 class="vue__title">Menu de l'utilisateur</h3>
+                                <p class="vue__description">
+                                    Lorsque l'utilisateur est sélectionné par l'administrateur, c'est à ce moment que la tablette change de main, désormais c'est l'utilisateur qui est aux commandes.
+                                    <br>
+                                    <br>
+                                    L'utilisateur peut alors créer l'enregistrement lié à la désinfection qu'il va effectuer.
+                                    <br>
+                                    <br>
+                                    L'utilisateur peut également changer d'utilisateur si ça n'est pas lui en revenant sur la page précédente.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="vue__content grid ">
+                            <img src="../assets/img/Selection-date.PNG" alt="" class="vue__img">
+                            <div class="vue__data">
+                                <h3 class="vue__title">Sélection de la date</h3>
+                                <p class="vue__description">
+                                    Dans le cas où l'utilisateur souhaite créer un nouvel enregistrement, il devra en premier sélectionne la date.
+                                    <br>
+                                    <br>
+                                    Si la date n'est pas sélectionnée, l'utilisateur ne peut passer à l'étape suivante.
+                                    <br>
+                                    <br>
+                                    Important de noter que l'utilisateur peut annuler à tout moment la création de l'enregistrement en cliquant sur la croix rouge en haut à droite.
+                                    <br>
+                                    <br>
+                                    On Voit également que l'utilisateur est systématiquement identifé en haut à gauche.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="vue__content grid ">
+                            <img src="../assets/img/Selection-surfaces.PNG" alt="" class="vue__img">
+                            <div class="vue__data">
+                                <h3 class="vue__title">Sélection des surfaces</h3>
+                                <p class="vue__description">
+                                    L'utilisateur doit désormais sélectionner la ou les surfaces qu'il a désinfecté.
+                                    <br>
+                                    <br>
+                                    Si l'utilisateur n'a pas sélectionné au moins une surface, il ne peut passer à l'étape suivant.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="vue__content grid ">
+                            <img src="../assets/img/Résumé.PNG" alt="" class="vue__img">
+                            <div class="vue__data">
+                                <h3 class="vue__title">Résumé de l'enregistrement</h3>
+                                <p class="vue__description">
+                                    Une fois les surfaces sélectionnées, un résumé de l'enregistrement est proposé à l'utilisateur.
+                                    <br>
+                                    <br>
+                                    Il peut alors contrôler la liste des surfaces traitées et s'il le désire en supprimer une ou plusieurs.
+                                    Il peut également contrôler quel administrateur supervise l'opération et la date de l'enregistrement.
+                                    <br>
+                                    <br>
+                                    Si tout est en ordre l'utilisateur peut passer à la signature.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="vue__content grid ">
+                            <img src="../assets/img/Choix-signature.PNG" alt="" class="vue__img">
+                            <div class="vue__data">
+                                <h3 class="vue__title">Choix de la méthode de signature</h3>
+                                <p class="vue__description">
+                                    Pour signer l'enregistrement, l'utilisateur a 2 solutions possibles, soit sélectionner sa signature prédéfinie lors de la création de son profil ou signer lui-même
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="vue__content grid ">
+                            <img src="../assets/img/Creation-signature.PNG" alt="" class="vue__img">
+                            <div class="vue__data">
+                                <h3 class="vue__title">Si l'utilisateur désire signer lui-même</h3>
+                                <p class="vue__description">
+                                    Une modal s'ouvre et l'utilisateur n'a qu'a signer avec son doigt et valider
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="vue__content grid ">
+                            <img src="../assets/img/Selection-animal.PNG" alt="" class="vue__img">
+                            <div class="vue__data">
+                                <h3 class="vue__title">authentification de l'utilisateur</h3>
+                                <p class="vue__description">
+                                    Avant d'envoyer l'enregistrement, l'utilisateur devra s'identifier avec son animal secret caché parmi d'autres.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="vue__content grid ">
+                            <img src="../assets/img/Confirmer.PNG" alt="" class="vue__img">
+                            <div class="vue__data">
+                                <h3 class="vue__title">Confirmation</h3>
+                                <p class="vue__description">
+                                    Une fois que l'enregistrement a bien été envoyé, une page de confirmation apparaît!
+                                    <br>L'enregistrement a bien été pris en compte !!!!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="vue__content grid ">
+                            <img src="../assets/img/Menu-utilisateur.PNG" alt="" class="vue__img">
+                            <div class="vue__data">
+                                <h3 class="vue__title">Retour au menu</h3>
+                                <p class="vue__description">
+                                    L'utilisateur est redirigé vers le menu, il peut réitérer l'opération autant de fois qu'il le souhaite.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="depots"></div>
+
+                        <h2 class="section__title">Développement de L'application</h2>
+                        <p class="vue__sub">
+                           Maintenant que nous avons une ligne directrice avec les design et les idées de fonctionnalité, nous pouvons commencer à développer notre application.
+                        </p>
+                        <br>
+                        <br>
+                        <div id="normes"></div>
+
+                        <div class="vue__content grid ">
+                            <img src="../assets/img/depots.PNG" alt="" class="vue__img">
+                            <div class="vue__data">
+                                <h3 class="vue__title">Récupération des dossiers de l'application sur les dépots github</h3>
+                                <p class="vue__description">
+                                    Mr Roca a commencé à développer l'application, il fallait donc que je la récupère et que je lie mon github aux dépôts de l'application afin de pouvoir la modifier.
+                                    <br>L'application est divisée en 2 dossiers: Auditextyl et Auditexty-back
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="vue__content">
+                            <div class="vue__data">
+                                <h3 class="vue__title">Comprendre les normes</h3>
+                                <p class="vue__description">
+                                    Avant de commencer à développer, Mr Roca m'a montré les normes à respecter avant de coder, voici un exemple sur la gauche des normes pour les requêtes sur la partie back
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="vue__content">
+                                <img src="../assets/img/formalisme.PNG" alt="" class="vue__img-solo">
+                            </div>
+
+                        <h2 class="section__title">Développement sur partie back</h2>
+                        <br>
+                        <br>
+
+                        <div class="vue__content grid ">
+                            <img src="../assets/img/bdd.jpg" alt="" class="vue__img">
+                            <div class="vue__data">
+                                <h3 class="vue__title">Création d'une base de données test</h3>
+                                <p class="vue__description">
+                                    Afin de pouvoir tester mes services il me fallait une  base de données je l'ai donc crée.
+                                    <br>Elle comporte 3 tables :
+                                    <br>
+                                    <br><strong>user</strong>(Id, Nom, Prenom, Image, Signature, Animal, IsAdmin)
+                                    <br><strong>surfaces</strong>(Id,Libelle,Image)
+                                    <br><strong>form</strong>(Id, Libelle, Date, surface, IdAdmin, IdUser, IsSigned)
+                                    <br><strong>animal</strong>(Id, Libelle, Image)
+                                    <br>
+                                    <br>Quelques précisions: l'image et la signature seront stockées en base 64 et il n'y a pas de lisaison entre les tables.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="vue__content grid ">
+                            <img src="../assets/img/requete.PNG" alt="" class="vue__img">
+                            <div class="vue__data">
+                                <h3 class="vue__title">Requêtes </h3>
+                                <p class="vue__description">
+                                    J'ai crée les requêtes pour chaque tables appelée <strong>CRUD</strong> : 
+                                    <br>
+                                    <br><strong>C</strong>reate / Créer 
+                                    <br>
+                                    <br><strong>R</strong>ead / Lire
+                                    <br>
+                                    <br><strong>U</strong>date / Mettre à jour
+                                    <br> 
+                                    <br><strong>D</strong>elete / Supprimer)
+                                    <br>
+                                    <br>j'ai testé toutes mes requêtes avec postman qui m'a grandement aidé. Exemple sur la gauche d'une requête visant à récupérer l'ensemble des animaux.
+                                </p>
+                            </div>
+                        </div>
+
+                        <h2 class="section__title">Développement sur partie front</h2>
+                        <br>
+                        <br>
+
+
+                        <div class="vue__content grid ">
+                            <div class="vue__data">
+                                <h3 class="vue__title">Lisaison de la base de données</h3>
+                                <p class="vue__description">
+                                    Avant de commencer à développer, il faut lier la base de données (actuellement locale) et ça se fait en une seule ligne  dans le fichier .env 
+                                </p>
+                            </div>
+                            <img src="../assets/img/liaisonbdd.PNG" alt="" class="vue__img">
+                        </div>
+                        
+                        <div class="vue__content grid ">
+                            <img src="../assets/img/expobundler.PNG	" alt="" class="vue__img">
+                            <div class="vue__data">
+                                <h3 class="vue__title">Utilisation d'Expo-Cli</h3>
+                                <p class="vue__description"> Après avoir installé Expo-Cli dans les dossiers de notre partie front et démarrer notre projet back avec la console, on démarre l'application via la console avec la commande "expo start", le bundling de l'application s'effectue et un Qr code et une adresse s'affiche, expo va en réalité créer un serveur local afin de pouvoir émuler notre application.
+                                <br>J'ai juste à rentrer l'adresse sur l'application expo dans ma tablette et mon application apparaît.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="vue__content grid ">
+                            <div class="vue__data">
+                                <h3 class="vue__title">Arrivée sur l'application</h3>
+                                <p class="vue__description">
+                                    Une fois un compte crée avec une adresse mail et un mot de passse, j'arrive sur le menu de l'application, on voit en bas un menu avec les différents axes, mon rôle consiste à développer l'axe <strong>Traçabilité</strong>.
+                                </p>
+                            </div>
+                            <img src="../assets/img/appli.PNG" alt="" class="vue__img">
+                        </div>
+                        
+                        <div id="test"></div>
+
+                        <div class="vue__content grid ">
+                            <img src="../assets/img/selection.PNG" alt="" class="vue__img">
+                            <div class="vue__data">
+                                <h3 class="vue__title">Suite du développement</h3>
+                                <p class="vue__description">Les semaines suivantes ont été consacrées au dévelopment de la partie administrateur (choix de l'utilisateur, création d'un nouvel utilisateur).
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="vue__content">
+                            <div class="vue__data">
+                                <h3 class="vue__title">Choix des meilleures solutions pour l'application</h3>
+                                <p class="vue__description">Durant le développement, j'ai dû faire quelques choix techniques avec l'approbation de Mr Rocca. Au lieu de prendre une library DateTimePicker initialement prévue, j'ai choisi un Calendar picker, plus fonctionnel et beaucoup plus facile à modifier que le DateTimePicker.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="vue__content grid ">
+                            <div class="vue__data">
+                                <h3 class="vue__title">Dernière semaine de stage</h3>
+                                <p class="vue__description">Après avoir terminé la partie utilisateur, j'ai commencé le développement du formulaire d'ajout d'enregistrement de désinfection. Je n'ai pas eu le temps de le terminer, mais je continue à le travailler sur mon temps libre.
+                                </p>
+                            </div>
+                            <img src="../assets/img/Confirmer.PNG" alt="" class="vue__img">
+                        </div>
+
+                    </div>
+                        
+                </div>
+
+
+            </section>
+
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Louis Borroni</h1>
+                </div>
+
+                <div class="footer__socials">
+                    <a href="https://www.linkedin.com/in/louis-borroni-8051a8164/" target="blank" class="footer__social">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/louis.brrni/?hl=fr" target="blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+
+                    <a href="https://github.com/Aulas69" target="blank" class="footer__social">
+                        <i class="uil uil-github-alt"></i>                    
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Louis BORRONI. All right reserved</p>
+        </div> 
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="../assets/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="../assets/js/main.js"></script>
+    </body>
+</html>
